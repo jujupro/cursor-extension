@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Fancy Cursor",
+  "description": "Turn the cursor into Sailor Jupier and Chun Li for whenever we detect the words Clinks and Carly, respectively",
+  "version": "1.0",
+  "author": "Sampurna Chapagain",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Latest Covid Report"
+  },
+  "content_scripts": [
+    {
+      "js": ["main.js"],
+      "matches": [
+        "https://www.codesmith.io/about#team",
+        "https://www.codesmith.io/*"
+      ],
+      "css": ["style.css"]
+    }
+  ],
+
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["carly.png", "brianna.png", "clinks.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

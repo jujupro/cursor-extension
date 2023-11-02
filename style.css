@@ -1,0 +1,8 @@
+#customCursor {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.2s;
+}
