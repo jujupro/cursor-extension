@@ -1,6 +1,6 @@
 #customCursor {
   position: absolute;
-  width: 30px;
+  width: 200px;
   height: auto;
   transform: translate(-50%, -50%);
   pointer-events: none;
